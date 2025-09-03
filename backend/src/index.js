@@ -14,10 +14,15 @@ import {app, server} from "./lib/socket.js";
 
 app.use(express.json());
 app.use(cookieParser());
+
 app.use(cors({
-    origin: "http://localhost:5173",
-    credentials: true,
+    origin: [
+        "http://localhost:5173", 
+        "https://chatter-8vtisda65-vedants-projects-bae2b974.vercel.app"
+    ],
+    credentials: true
 }));
+
 
 const PORT = process.env.PORT || 5001;
 

@@ -22,7 +22,7 @@ app.use(cors({
 
         const allowedOrigins = [
             "http://localhost:5173",        
-            "https://chatter.vercel.app"    
+            "https://chatter-sigma-navy.vercel.app/login"    
         ];
 
         if (allowedOrigins.includes(origin) || origin.endsWith(".vercel.app")) {

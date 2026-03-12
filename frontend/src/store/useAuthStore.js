@@ -93,6 +93,7 @@ checkAuth: async () => {
       query: {
         userId: authUser._id,
       },
+      transports: ["websocket"],
     });
     socket.connect();
 
